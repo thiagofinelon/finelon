@@ -11202,6 +11202,88 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-npn" urn="urn:adsk.eagle:library:398">
+<description>&lt;b&gt;NPN Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO92-EBC" urn="urn:adsk.eagle:footprint:28938/1" library_version="3">
+<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
+ grid 5.08 mm</description>
+<wire x1="-2.095" y1="-2.921" x2="2.095" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="-0.1341" x2="2.413" y2="-0.1341" width="0.127" layer="21" curve="-129.583"/>
+<wire x1="1.136" y1="-1.397" x2="-1.136" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-2.413" y1="-0.1341" x2="-2.664" y2="-1.397" width="0.127" layer="51" curve="27.9376"/>
+<wire x1="-2.664" y1="-1.397" x2="-2.413" y2="-2.4059" width="0.127" layer="51" curve="22.4788"/>
+<wire x1="-1.404" y1="-1.397" x2="-2.664" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-2.4135" y1="-2.4059" x2="-2.095" y2="-2.921" width="0.127" layer="21" curve="13.0385"/>
+<wire x1="-1.136" y1="-1.397" x2="-1.404" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="2.413" y1="-2.4059" x2="2.664" y2="-1.397" width="0.127" layer="51" curve="22.4788"/>
+<wire x1="2.664" y1="-1.397" x2="2.413" y2="-0.1341" width="0.127" layer="51" curve="27.9376"/>
+<wire x1="2.664" y1="-1.397" x2="1.404" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="1.404" y1="-1.397" x2="1.136" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="2.095" y1="-2.921" x2="2.4247" y2="-2.3818" width="0.127" layer="21" curve="13.6094"/>
+<pad name="C" x="-2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<pad name="E" x="2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<pad name="B" x="0" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.54" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="TO92-EBC" urn="urn:adsk.eagle:package:28989/2" type="model" library_version="3">
+<description>TO-92
+ grid 5.08 mm</description>
+<packageinstances>
+<packageinstance name="TO92-EBC"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="NPN" urn="urn:adsk.eagle:symbol:28915/1" library_version="3">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BC548*" urn="urn:adsk.eagle:component:29116/2" prefix="Q" library_version="3">
+<description>&lt;b&gt;NPN Transistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92-EBC">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28989/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+<technology name="A"/>
+<technology name="B"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11231,6 +11313,7 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <part name="IC2" library="linear" deviceset="78*" device="T" technology="05"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="025-024X044" value="1u"/>
+<part name="Q1" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC548*" device="" package3d_urn="urn:adsk.eagle:package:28989/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -11298,6 +11381,14 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="10.16" y1="83.82" x2="55.88" y2="83.82" width="0.6096" layer="97" style="shortdash"/>
 <wire x1="55.88" y1="83.82" x2="55.88" y2="76.2" width="0.6096" layer="97" style="shortdash"/>
 <text x="14.224" y="78.232" size="3.81" layer="97">Reg. Tensão 5V</text>
+<wire x1="9.906" y1="10.16" x2="9.906" y2="33.02" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="9.906" y1="33.02" x2="50.546" y2="33.02" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="50.546" y1="33.02" x2="50.546" y2="10.16" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="50.546" y1="10.16" x2="9.906" y2="10.16" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="9.906" y1="33.02" x2="9.906" y2="40.64" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="9.906" y1="40.64" x2="50.546" y2="40.64" width="0.8128" layer="97" style="shortdash"/>
+<wire x1="50.546" y1="40.64" x2="50.546" y2="33.02" width="0.8128" layer="97" style="shortdash"/>
+<text x="17.018" y="34.798" size="3.81" layer="97">Chave uSD</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -11362,6 +11453,10 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <attribute name="NAME" x="46.736" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="46.736" y="54.229" size="1.778" layer="96"/>
 </instance>
+<instance part="Q1" gate="G$1" x="30.226" y="20.32" smashed="yes">
+<attribute name="NAME" x="20.066" y="27.94" size="1.778" layer="95"/>
+<attribute name="VALUE" x="20.066" y="25.4" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11420,11 +11515,6 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <label x="175.26" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="189.992" y1="99.314" x2="184.912" y2="99.314" width="0.1524" layer="91"/>
-<label x="184.912" y="99.314" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="-"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
@@ -11440,6 +11530,11 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="99.06" y1="73.66" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
 <label x="96.52" y="66.04" size="1.4224" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="32.766" y1="15.24" x2="40.386" y2="15.24" width="0.1524" layer="91"/>
+<label x="35.306" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -11596,6 +11691,11 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="25.4" y1="137.16" x2="17.78" y2="137.16" width="0.1524" layer="91"/>
 <label x="17.78" y="137.16" size="1.4224" layer="95"/>
 </segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="B"/>
+<wire x1="27.686" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<label x="20.32" y="20.32" size="3.81" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -11682,6 +11782,18 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="121.92" y1="63.5" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
 <junction x="121.92" y="73.66"/>
 <label x="124.46" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND_SD" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="32.766" y1="25.4" x2="40.386" y2="25.4" width="0.1524" layer="91"/>
+<label x="35.306" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="189.992" y1="99.314" x2="184.912" y2="99.314" width="0.1524" layer="91"/>
+<label x="180.34" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
