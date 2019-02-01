@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -168,12 +168,14 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyY2NiZmI4" projecturn="a.cGVyc29uYWw6dWUyY2NiZmI4IzIwMTkwMTI0MTcyMjcyMTUx" f3durn="urn:adsk.wipprod:dm.lineage:vljMM_kDTuCh9VKP5X2PJw" pcbguid="a6e1b2c5-2a28-44fb-b83e-43568e824d7c" lastpulledtime="" lastsyncedchangeguid="cf847ee6-e7db-db41-a710-733bcf0a3aec"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyY2NiZmI4" projecturn="a.cGVyc29uYWw6dWUyY2NiZmI4IzIwMTkwMTI0MTcyMjcyMTUx" f3durn="urn:adsk.wipprod:dm.lineage:vljMM_kDTuCh9VKP5X2PJw" pcbguid="a6e1b2c5-2a28-44fb-b83e-43568e824d7c" lastpulledtime="" lastsyncedchangeguid="0e12d7c9-5c6e-7268-0c95-510f02b6dffe"/>
 <plain>
 <wire x1="0" y1="59" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="75" y2="0" width="0" layer="20"/>
 <wire x1="75" y1="0" x2="75" y2="59" width="0" layer="20"/>
 <wire x1="75" y1="59" x2="0" y2="59" width="0" layer="20"/>
+<hole x="3" y="56" drill="3"/>
+<hole x="72" y="3" drill="3"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
